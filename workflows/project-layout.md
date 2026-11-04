@@ -12,6 +12,8 @@ This repository holds the description only. Recordings, exports, identifiers, an
 <project>/
 ├── dataset/          # source material the analysis reads
 ├── resources/        # brief, protocol, maps, codebook, references
+├── journal/          # analysis journal for every step
+│   └── analysis.md
 ├── results/          # working analysis output
 │   └── data/         # tables the analysis writes
 └── report/           # the written deliverable
@@ -26,7 +28,13 @@ Source material for the analysis: session folders, exported tables, and other fi
 
 A processed RE-AK session stays here as one folder. That folder has its own `rawData/`, `features/`, and `results/` (the pipeline's 2 Hz tables, such as `HeartDynamics.csv`, `Arousal.csv`, `Cognition.csv`, and `Emotions.csv`). Those pipeline tables are inputs. They are distinct from the project-level `results/` directory, which holds the analysis built on top of one or more sessions.
 
-Leave `dataset/` unchanged. Correct a source file only when the user asks for that correction, and record what changed in `resources/`.
+Leave `dataset/` unchanged. Correct a source file only when the user asks for that correction, and record what changed in `journal/analysis.md`.
+
+## journal/
+
+`journal/analysis.md` is the running record of the analysis steps: what was done, which files were written, what was found, and what is still open. One entry per step, appended when the step is done or redone. See [Analysis steps](analysis-steps.md).
+
+The journal stays in the data project.
 
 ## resources/
 
@@ -50,4 +58,4 @@ The written deliverable for the people the project is for: the narrative, in the
 
 ## What stays out of the workflows repository
 
-`ai-workflows-public` contains instructions. It does not contain a data project's `dataset/`, `resources/`, `results/`, or `report/`. Those directories live only in the data project. Descriptions and examples in this repository use schematic names, such as `session-example`, and never a recording, an identifier, or a client deliverable.
+`ai-workflows-public` contains instructions. It does not contain a data project's `dataset/`, `resources/`, `journal/`, `results/`, or `report/`. Those directories live only in the data project. Descriptions and examples in this repository use schematic names, such as `session-example`, and never a recording, an identifier, or a client deliverable.

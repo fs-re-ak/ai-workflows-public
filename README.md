@@ -10,7 +10,8 @@ This repository holds instructions and nothing else. It does not hold recordings
 
 | Workflow | What it standardizes |
 |---|---|
-| [Data project layout](workflows/project-layout.md) | Where source data, reference material, analysis outputs, and the deliverable go |
+| [Analysis steps](workflows/analysis-steps.md) | Organize, process, annotate (temporal and spatial), explore, and report. Keep a journal in the data project. |
+| [Data project layout](workflows/project-layout.md) | Where source data, the journal, reference material, analysis outputs, and the deliverable go |
 
 ## Use with an agent
 
