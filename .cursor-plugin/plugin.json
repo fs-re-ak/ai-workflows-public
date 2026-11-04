@@ -1,0 +1,11 @@
+{
+  "name": "reak-analysis",
+  "version": "0.1.0",
+  "description": "Opt-in layout for a RE-AK data-analysis project: where source data, reference material, analysis outputs, and the deliverable go.",
+  "author": {
+    "name": "RE-AK Technologies Inc."
+  },
+  "license": "MIT",
+  "keywords": ["data-analysis", "project-layout"],
+  "skills": ".claude/skills"
+}
